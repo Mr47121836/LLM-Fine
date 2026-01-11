@@ -4,7 +4,7 @@
 
 <div align="center">
 
-一个专注于**大语言模型（LLM）参数高效微调（PEFT）**的实用项目集合
+一个专注于**大语言模型（LLM）参数高效微调（PEFT）** 的实用项目集合
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red?logo=pytorch)](https://pytorch.org/)
