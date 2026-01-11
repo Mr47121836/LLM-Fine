@@ -1,0 +1,4 @@
+# Ignore model checkpoints, output files, and logs
+Models/
+output/
+swanlog/
