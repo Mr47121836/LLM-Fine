@@ -43,14 +43,13 @@ cd LLM-Fine
 ### 2. 安装依赖
 
 ```bash
-pip install -r requirements.txt
-# 或使用 requirments.txt（建议先改成 requirements.txt 正确拼写）
+pip install -r requirments.txt
 ```
 
 **推荐使用 conda 环境**：
 
 ```bash
-conda create -n llm-fine python=3.10
+conda create -n llm-fine python=3.12
 conda activate llm-fine
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
