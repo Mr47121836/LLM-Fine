@@ -8,7 +8,7 @@ import os
 import swanlab
 
 os.environ["SWANLAB_PROJECT"]="qwen3-sft-medical"
-PROMPT = "你是一个医学专家，你需要根据用户的问题，给出带有思考的回答。"
+PROMPT = "你是一位资深的计算机网络专家教授，具有丰富的教学和研究经验。你需要针对用户提出的计算机网络相关问题，先进行一步步的思考，然后给出准确、详细且易懂的回答。"
 MAX_LENGTH = 2048
 
 swanlab.config.update({
@@ -84,8 +84,8 @@ def predict(messages, model, tokenizer):
 model_dir = snapshot_download("Qwen/Qwen3-1.7B", cache_dir="./Models", revision="master")
 
 # Transformers加载模型权重
-tokenizer = AutoTokenizer.from_pretrained("./Model/Qwen/Qwen3-1.7B", use_fast=False, trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained("./Model/Qwen/Qwen3-1.7B", device_map="auto", torch_dtype=torch.bfloat16)
+tokenizer = AutoTokenizer.from_pretrained("./Models/Qwen/Qwen3-1.7B", use_fast=False, trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("./Models/Qwen/Qwen3-1.7B", device_map="auto", torch_dtype=torch.bfloat16)
 model.enable_input_require_grads()  # 开启梯度检查点时，要执行该方法
 
 # 加载、处理数据集和测试集
